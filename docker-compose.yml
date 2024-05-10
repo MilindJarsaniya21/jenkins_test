@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  mernauth:
+    image: mernauth
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 5000:5000
